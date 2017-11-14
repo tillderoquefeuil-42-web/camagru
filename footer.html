@@ -1,0 +1,17 @@
+<footer class="foothead">
+
+<div class="connex"><a class="co" href="contact.php">Contact</a>
+
+<?PHP
+
+if (authlog($_SESSION['loggued_on_user']))
+{
+   echo '<a class="co" href="modif.php" title="Change Password">Account</a></div>';   
+}
+
+?>
+
+</footer>
+</div>
+</bod>
+</html>

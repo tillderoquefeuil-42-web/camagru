@@ -1,0 +1,24 @@
+<body id="body">
+<div id="all">
+
+<header class="foothead">
+<div class="connex">
+<a class="co" href="index.php">Home</a>
+
+<?PHP
+
+echo '<a class="co" href="galery.php" title="Galery">Galery</a>';
+
+if (authlog($_SESSION['loggued_on_user']))
+{
+   echo '<a class="co" href="users.php" title="Users">Users</a>';
+   echo '<a class="co" href="profile.php" title="MyPictures">My Pictures</a>';
+   echo '<a class="co" href="logout.php" title="Home Page">Log out</a>';
+}
+else
+   echo '<a class="co" href="connexion.php">Connexion</a>';
+
+?>
+
+</div>
+</header>
